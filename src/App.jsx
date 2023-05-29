@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function App() {
   
-  const API_WEATHER = `http://api.weatherapi.com/v1/current.json?key=313889553d5b4249a3c65933232805&q=`; 
+  const API_WEATHER = `https://api.weatherapi.com/v1/current.json?key=313889553d5b4249a3c65933232805&q=`; 
   
 const [city, setCity] = useState("")
 const [loading, setloading] = useState(false)

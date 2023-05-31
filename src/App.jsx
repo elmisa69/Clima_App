@@ -62,6 +62,11 @@ export default function App() {
     <Container maxWidth="xs" sx={{ mt: 2 }}>
       <Card>
         <CardContent>
+        {weather.length > 0 && (
+            <Box sx={{ mt: 2, textAlign: "center" }}>
+              <Button onClick={handleDeleteWeather}>Eliminar todas las tarjetas</Button>
+            </Box>
+          )}
           <Typography variant="h3" component="h1" align="center" gutterBottom>
             Clima de hoy en:
           </Typography>
@@ -106,11 +111,6 @@ export default function App() {
               </Card>
             ))}
           </Box>
-          {weather.length > 0 && (
-            <Box sx={{ mt: 2, textAlign: "center" }}>
-              <Button onClick={handleDeleteWeather}>Eliminar todas las tarjetas</Button>
-            </Box>
-          )}
         </CardContent>
       </Card>
     </Container>

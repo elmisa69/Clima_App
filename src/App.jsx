@@ -114,9 +114,7 @@ export default function App() {
         </CardContent>
       </Card>
       <Dialog open={selectedWeather !== null} onClose={() => setSelectedWeather(null)}>
-        <DialogTitle>Confirmar eliminación</DialogTitle>
         <DialogContent>
-          <DialogContentText>¿Estás seguro de que quieres eliminar esta tarjeta de clima?</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setSelectedWeather(null)}>Cancelar</Button>

@@ -113,14 +113,6 @@ export default function App() {
           )}
         </CardContent>
       </Card>
-      <Dialog open={selectedWeather !== null} onClose={() => setSelectedWeather(null)}>
-        <DialogContent>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setSelectedWeather(null)}>Cancelar</Button>
-          <Button onClick={handleDeleteWeather} color="error">Eliminar</Button>
-        </DialogActions>
-      </Dialog>
     </Container>
   );
 }

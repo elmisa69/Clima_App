@@ -14,8 +14,7 @@ export default function App() {
   });
 
   const [weather, setWeather] = useState([]);
-  const [selectedWeather, setSelectedWeather] = useState(null);
-
+  
   const onSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
